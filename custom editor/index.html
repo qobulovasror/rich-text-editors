@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Rich Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="editor-container">
+    <div class="editor-toolbar">
+      <button onclick="formatText('bold')"><strong>B</strong></button>
+      <button onclick="formatText('italic')"><em>I</em></button>
+      <button onclick="formatText('underline')"><u>U</u></button>
+      <button onclick="formatText('insertOrderedList')">&#35; List</button>
+      <button onclick="formatText('insertUnorderedList')">&#8226; List</button>
+      <button onclick="createLink()">&#128279; Link</button>
+      <button onclick="insertImage()">&#128247; Image</button>
+      <!-- Add more buttons for other formatting options -->
+    </div>
+    <div id="editor-content" contenteditable="true">
+      <!-- Initial content goes here -->
+    </div>
+  </div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
