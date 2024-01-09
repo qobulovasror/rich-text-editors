@@ -1,0 +1,63 @@
+/* TODO: Add comments...please? */
+
+/* Override Defaults */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS */
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 1rem; 
+  
+  .editable {
+    min-height: 1.5rem;
+    /* height: 1em; */
+    width: calc(75% - 1em);
+    margin: 0 12.5% 0.5em 12.5%;
+    outline: none;
+    border-bottom: 0.125em white solid;
+    padding: 0.25rem;
+    
+    h1, p {
+      display: inline-block;
+      width: auto;
+    }
+  }
+  .editable:focus, .editable:active {
+    transition: border 0.2s;
+    border-bottom: 0.125em black solid;
+  }
+  .editable::selection {
+    background: #FFF5B8;
+  }
+  #storyTitle {
+    font-size: 0.75rem;
+  }
+  #chapterTitle {
+    font-size: 1.25rem;
+    color: #696969;
+  }
+  #chapterContent {
+    border: 0.125rem white solid;
+    /* height: 60%; */
+    overflow: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 150%;
+  }
+  #chapterContent:focus, #chapterContent:active {
+    border-radius: 0.25em;
+    border-left: 0.125em black solid;
+    border-right: 0.125em black solid;
+  }
+}
+
+
